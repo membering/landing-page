@@ -47,3 +47,38 @@ html, body {
 #page6 {
     background-image: url('images/bg6.png');
 }
+.onepage-pagination {
+    list-style:none;
+    margin:-40px 0 0;
+    padding:0;
+    position:fixed;
+    left:40px;
+    top:50%;
+    z-index:9999
+}
+.onepage-pagination li {
+    height:20px;
+    padding:0
+}
+.onepage-pagination li a:before {
+    -webkit-transition:all 0.5s;
+    -o-transition:all 0.5s;
+    transition:all 0.5s;
+    background:#fff;
+    border:3px solid #fff;
+    border-radius:20px;
+    content:"";
+    display:block;
+    height:8px;
+    position:absolute;
+    width:8px
+}
+.onepage-pagination li.active a:before {
+    background:none;
+    height:14px;
+    width:14px;
+    margin:-3px 0 0 -3px
+}
+.nav li a:hover, .nav li a:focus {
+    background-color: transparent;
+}
